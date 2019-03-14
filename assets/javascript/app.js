@@ -1,26 +1,13 @@
 $(document).ready(function() {
 
     var topics = ["Jon Snow", "Hodor", "Daenerys Targaryen", "Drogo", "Tyrion Lannister","Jaime Lannister", "Ned Stark", "Sansa Stark", "Bran Stark"]
-    const theme = new Audio("assets/got-theme-song.mp3");
-    var musicPlaying = false;
+ 
     var results;
     //var giphyURL = "https://api.giphy.com/v1/gifs/trending?api_key=FksXZxJtNgMhBh9yoAtA6sJfP13eNyd4";
     
-        // MUSIC FUNCTION 
+        
+        function makeButtons() { // MAKE BUTTONS	AND ADD ONCLICK FUNCTION
     
-        $("#title-button").on("click", function() {
-            if(musicPlaying == false){
-                theme.play();
-                musicPlaying = true;
-               }else {
-                theme.pause();
-                musicPlaying = false;
-            }
-        });
-    
-        // MAKE BUTTONS	AND ADD ONCLICK FUNCTION
-    
-        function makeButtons() {
     
             $("#got-buttons").empty();
     
